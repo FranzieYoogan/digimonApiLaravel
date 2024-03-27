@@ -16,6 +16,64 @@
     
 }
 
+.buttonStyle {
+
+    font-weight: 900 !important;
+
+}
+
+
+
+.nav-link {
+
+    font-weight: 900 !important;
+    color: #5e7f64;
+  }
+
+  .anchorHome {
+
+    font-weight: 900 !important;
+    color: #5e7f64;
+    opacity: 0;
+    transition: 3s ;
+  }
+
+  ::placeholder { /* Most modern browsers support this now. */
+
+    color: var(--a) !important;
+
+    font-weight: 900 !important;
+    
+ }
+
+ input {
+
+    width: 250px !important; 
+ }
+
+ input:hover , input:active, input:focus  { /* Most modern browsers support this now. */
+    
+   --a: #9bc8cd;
+
+    font-weight: 900 !important;
+        width: 250px !important;
+ }
+
+  .anchorAbout {
+
+    font-weight: 900;
+    color: #5e7f64 ;
+    opacity: 0;
+    transition: 3s ;
+  }
+
+
+  .nav-link:hover {
+
+    font-weight: 900 !important;
+    color: #9bc8cd !important;
+  }
+
 
 
 .iconHeader {
@@ -146,6 +204,26 @@ opacity: 0;
         top: 7.5em !important;
 
     }
+
+    .nav-item {
+        
+        width: 250% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 250%  !important;
+    }
+
+    .buttonStyle {
+
+        width: 250%   !important;
+
+    }
+
   }
 
   @media only screen and (width: 400px) {
@@ -232,13 +310,16 @@ opacity: 0;
     ul {
         position: absolute !important;
         top: 8.5em !important;
-
+    
     }
+
+
 
     .nav-item {
         
         width: 350% !important;
         border-bottom: 1px solid #9bc8cd !important;
+    
     }
 
     input {
@@ -283,8 +364,9 @@ button {
 
 button:hover {
 
-    background-color: #5e7f64 !important;
+
     color: white !important;
+    background-color: #9bc8cd !important;
 }
 
 input:hover, input:active, input:focus {

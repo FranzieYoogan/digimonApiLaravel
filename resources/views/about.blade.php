@@ -65,9 +65,17 @@
                                         if(click == 1) {
 
                                             document.getElementById('list').style.visibility = 'visible';
+                                            document.getElementById('anchorHome').style.opacity = '1';
+                                            document.getElementById('anchorHome').style.transition = '0.3s';
+                                            document.getElementById('anchorAbout').style.transition = '0.3s';
+                                            document.getElementById('anchorAbout').style.opacity = '1';
                                             document.getElementById('content').style.visibility = 'hidden';
                                             
                                         } else if(click == 2) {
+                                            document.getElementById('anchorHome').style.transition = '0.3s';
+                                            document.getElementById('anchorAbout').style.transition = '0.3s';
+                                            document.getElementById('anchorHome').style.opacity = '0';
+                                            document.getElementById('anchorAbout').style.opacity = '0';
                                             document.getElementById('list').style.visibility = 'hidden';
                                             document.getElementById('content').style.visibility = 'visible';
                                             click = 0;
@@ -124,16 +132,12 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
                </script>
 
             <section id="content" class="content">
-            @if(isset($_POST['submit']))
-
-            @foreach($api->types as $key => $type)
-
-            @endforeach
-
-            <h1 style="display: block">{{$api->name}} Type: {{$type->type}}</h1>
         
 
-            @endif
+            <h1 style="display: block">About</h1>
+        
+
+      
 
         </section>
         
