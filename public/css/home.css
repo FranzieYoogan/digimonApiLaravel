@@ -34,13 +34,68 @@ opacity: 0;
  
 }
 
-@media only screen and (max-width: 554px) {
+
+
+
+@media only screen and (width: 320px) {
     .navbar {
 
         border-bottom: 1px solid black !important;
-        height: 30vh !important;
+        height: 25vh !important;
      
     }
+
+    ul {
+        position: absolute !important;
+        top: 8.5em !important;
+
+    }
+
+}
+
+
+@media only screen and (width: 345px) {
+    .navbar {
+
+        border-bottom: 1px solid black !important;
+        height: 35vh !important;
+     
+    }
+
+    ul {
+        position: absolute !important;
+        top: 7.5em !important;
+
+    }
+
+}
+
+@media only screen and (width: 375px) {
+    .navbar {
+
+        border-bottom: 1px solid black !important;
+        height: 25vh !important;
+     
+    }
+
+    ul {
+        position: absolute !important;
+        top: 8.5em !important;
+
+    }
+
+}
+
+
+    @media only screen and (width: 554px) {
+        .navbar {
+    
+            border-bottom: 1px solid black !important;
+            height: 30vh !important;
+         
+        }
+
+        
 
     ul {
         position: absolute;
@@ -49,14 +104,72 @@ opacity: 0;
     }
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (width: 400px) {
     .navbar {
 
         border-bottom: 1px solid black !important;
         height: 20vh !important;
      
     }
+
+    ul {
+        position: absolute;
+        top: 6.5em !important;
+
+    }
+
   }
+
+
+  @media only screen and (width: 425px) {
+    .navbar {
+
+        border-bottom: 1px solid black !important;
+        height: 25vh !important;
+     
+    }
+
+    ul {
+        position: absolute;
+        top: 8.5em !important;
+
+    }
+
+  }
+
+  @media only screen and (width: 768px) {
+    .navbar {
+
+        border-bottom: 1px solid black !important;
+        height: 25vh !important;
+     
+    }
+
+    ul {
+        position: absolute !important;
+        top: 8.5em !important;
+
+    }
+
+}
+
+@media only screen and (width: 1024px) {
+    .navbar {
+
+        border-bottom: 1px solid black !important;
+        height: 25vh !important;
+     
+    }
+
+    ul {
+        position: absolute !important;
+        top: 6.5em !important;
+
+    }
+
+}
+
+
 
 button {
 
