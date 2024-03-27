@@ -19,10 +19,15 @@
     position: absolute;
     bottom: 5%;
     left: 13%;
-
-    font-weight: 900;
-    color: white;
-    text-shadow: 5px 5px 5px black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 19px !important;
+    font-weight: 900 !important;
+    box-shadow: 1px 1px 1px 1px black;
+    color: orange;
+   text-decoration: dotted;
+   font-style: oblique;
+    text-shadow: 2px 2px 2px #07afc2;
 
 
 
@@ -57,11 +62,19 @@ img {
 .dataStyle {
 
     font-weight: 900;
-
+  color: white;
+   text-decoration: dotted;
+   font-style: oblique;
+    text-shadow: 2px 2px 2px #07afc2;
 }
 
-body {
+@font-face {
+    font-family: pixel;
+    src: url('/fonts/Minecraft.ttf');
+  }
 
+body {
+    font-family: pixel !important;
 
     background: url('/img/background/background.gif') !important;
     background-size: 150% !important;
