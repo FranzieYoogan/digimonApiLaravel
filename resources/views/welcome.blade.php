@@ -148,7 +148,11 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
 
 
             <section id="content" class="content">
-            @if(isset($_POST['submit']) && isset($api))
+                
+     
+
+                @if(isset($_POST['submit']) && isset($api->name))
+
 
             @foreach($api->types as $key => $type)
 
@@ -202,12 +206,14 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
                 @if(!isset($nextEvolution->digimon)) none @endif
 
             </h1>
+
+      
         </div>
-
-        @else 
-
+        @else
+    
         <h1 class="dataStyle" style="display: block; border-bottom: 3px solid white">Enter Digimon's Name</h1>
         @endif
+   
 
         </section>
         

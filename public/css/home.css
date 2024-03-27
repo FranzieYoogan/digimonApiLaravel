@@ -18,12 +18,11 @@
 
     position: absolute;
     bottom: 5%;
-    left: 13%;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 19px !important;
+    left: 5%;
+
+    width: auto;
     font-weight: 900 !important;
-    box-shadow: 1px 1px 1px 1px black;
+
     color: orange;
    text-decoration: dotted;
    font-style: oblique;
