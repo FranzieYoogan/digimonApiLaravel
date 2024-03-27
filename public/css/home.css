@@ -48,7 +48,7 @@ img {
 
     border: 3px solid white;
     padding: 20px;
-    height: 45vh;
+    height: 50%;
     border-radius: 20px;
     background-color: #5e7f64;
     color: white;
@@ -88,6 +88,7 @@ body {
     border: 1px solid white !important;
     padding: 5px;
     border-radius: 10px;
+   
 }
 
 .pokemonImg {

@@ -168,6 +168,10 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
 
             @endforeach
 
+            @foreach($api->priorEvolutions as $key => $priorEvolution)
+
+            @endforeach
+
                 <div class="containerImg" style="position: relative">
 
                     <img class="pokemonImg" src="{{$img->href}}" alt="">
@@ -183,7 +187,17 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
 
             <h1 class="dataStyle" style="display: block">Level: {{$level->level}}</h1>
 
-            <h1 class="dataStyle" style="display: block">Next Evolution: {{$nextEvolution->digimon}}</h1>
+            <h1 class="dataStyle" style="display: block">Prior Evolution: @if(isset($priorEvolution->digimon)) {{$priorEvolution->digimon}} @endif
+                
+                @if(!isset($priorEvolution->digimon)) none  @endif
+            
+            </h1>
+
+            <h1 class="dataStyle" style="display: block">Next Evolution: @if(isset($nextEvolution->digimon)) {{$nextEvolution->digimon}} @endif 
+                
+                @if(!isset($nextEvolution->digimon)) none @endif
+
+            </h1>
         </div>
             @endif
 
