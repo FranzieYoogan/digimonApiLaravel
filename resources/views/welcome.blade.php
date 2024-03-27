@@ -44,8 +44,8 @@
               </button>
               <div class="listStyle collapse navbar-collapse" id="navbarSupportedContent">
              
-                <form method="POST" action="" class="d-flex" >
-                    @csrf
+              
+           
                     <ul id="list" class="list navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item">
                           <a  onmouseover="anchorEvent()"   id="anchorHome" class="anchorHome nav-link" aria-current="page" href="/">Home</a>
@@ -53,7 +53,7 @@
                         <li class="nav-item" style="margin-right: 2em">
                           <a onmouseover="anchorEvent()" id="anchorAbout" class="anchorAbout nav-link" href="/about">About</a>
                         </li>
-
+                    </ul>
 
                         <script>
                         function anchorEvent() {
@@ -100,12 +100,12 @@
 
 </script>
                         
-                    
-                      
+<form method="POST" action="" class="d-flex" >  
+    @csrf
                   <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
                   <button class="buttonStyle btn btn-outline-success" type="submit" name="submit">Search</button>
                 
-                </ul>
+            
                 </form>
               </div>
             </div>

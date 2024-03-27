@@ -146,7 +146,7 @@ img:hover {
 
   ::placeholder { /* Most modern browsers support this now. */
 
-    color: var(--a) !important;
+    color: #07afc2 !important;
 
     font-weight: 900 !important;
     
@@ -155,11 +155,12 @@ img:hover {
  input {
 
     width: 250px !important; 
+    border: 1px solid #07afc2 !important;
  }
 
  input:hover , input:active, input:focus  { /* Most modern browsers support this now. */
     
-   --a: #9bc8cd;
+  
 
     font-weight: 900 !important;
         width: 250px !important;
@@ -482,7 +483,7 @@ button:hover {
 
 input:hover, input:active, input:focus {
 
-    border: 1px solid #9bc8cd !important;
+    border: 1px solid transparent !important;
 
     outline: 1px solid #9bc8cd !important;
     box-shadow: 1px 1px 1px 1px #5e7f64 !important;
