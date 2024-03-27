@@ -59,6 +59,7 @@
                             function anchorEvent() {
     
                                 document.getElementById("anchorHome").style.color = '#5e7f64';
+                                document.getElementById("anchorHome").style.transition = '0.3s';
     
                             }
     

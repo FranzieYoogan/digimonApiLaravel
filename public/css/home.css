@@ -42,15 +42,15 @@ img {
 .containerDataPokemon {
 
     border: 3px solid white;
-    padding: 30px;
-    height: 37vh;
+    padding: 20px;
+    height: 45vh;
     border-radius: 20px;
     background-color: #5e7f64;
     color: white;
     font-weight: 900 ;
     text-shadow: 5px 5px 5px black;
     box-shadow: 5px 5px 5px 0px black !important;
-    width: 550px;
+    width: auto;
 
 }
 

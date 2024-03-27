@@ -48,7 +48,7 @@
                     @csrf
                     <ul id="list" class="list navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item">
-                          <a onmouseover="anchorEvent()"  id="anchorHome" class="anchorHome nav-link" aria-current="page" href="/">Home</a>
+                          <a  onmouseover="anchorEvent()"   id="anchorHome" class="anchorHome nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item" style="margin-right: 2em">
                           <a onmouseover="anchorEvent()" id="anchorAbout" class="anchorAbout nav-link" href="/about">About</a>
@@ -59,8 +59,12 @@
                         function anchorEvent() {
 
                             document.getElementById("anchorAbout").style.color = '#5e7f64';
+                            document.getElementById("anchorAbout").style.transition = '0.3s';
+               
 
                         }
+
+                    
 
                         </script>
 
@@ -160,6 +164,10 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
 
             @endforeach
 
+            @foreach($api->nextEvolutions as $key => $nextEvolution)
+
+            @endforeach
+
                 <div class="containerImg" style="position: relative">
 
                     <img class="pokemonImg" src="{{$img->href}}" alt="">
@@ -174,6 +182,8 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
             <h1 class="dataStyle"  style="display: block">Attribute: {{$attribute->attribute}}</h1>
 
             <h1 class="dataStyle" style="display: block">Level: {{$level->level}}</h1>
+
+            <h1 class="dataStyle" style="display: block">Next Evolution: {{$nextEvolution->digimon}}</h1>
         </div>
             @endif
 
