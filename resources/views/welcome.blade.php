@@ -39,20 +39,42 @@
             <div class="container-fluid">
               <a class="navbar-brand" href="/"> <img id="iconHeader" class="iconHeader" src="{{asset('img/icon/digimonEdit.jpg')}}" alt=""></a>
          
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button  onclick="toggleEvent()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="listStyle collapse navbar-collapse" id="navbarSupportedContent">
              
                 <form method="POST" action="" class="d-flex" >
                     @csrf
-                    <ul id="list" class=" navbar-nav me-auto mb-2 mb-lg-0" >
+                    <ul id="list" class="list navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item" style="margin-right: 2em">
                           <a class="nav-link" href="#">About</a>
                         </li>
+
+                        <script>
+
+
+                            var click = 0
+
+                                function toggleEvent() {
+                                    click++;
+                            
+                                        if(click == 1) {
+
+                                            document.getElementById('list').style.visibility = 'visible';
+                                        
+                                        } else if(click == 2) {
+                                            document.getElementById('list').style.visibility = 'hidden';
+                                            click = 0;
+                                        }
+                                
+
+                                }
+
+                        </script>
                         
                     
                       
