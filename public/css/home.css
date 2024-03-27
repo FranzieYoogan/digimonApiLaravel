@@ -2,7 +2,7 @@
 
     
     justify-content: end !important;
-
+    
 }
 
 
@@ -11,6 +11,9 @@
 
     width: 60px;
     transition: 0.5s;
+    position: relative;
+    right: 1em;
+opacity: 0;
 }
 
 .iconHeader:hover {
@@ -22,7 +25,8 @@
 .navbar {
 
     border-bottom: 1px solid black !important;
-
+    height: 15vh;
+ 
 }
 
 button {
@@ -44,4 +48,9 @@ input:hover, input:active, input:focus {
 
     outline: 1px solid #9bc8cd !important;
     box-shadow: 1px 1px 1px 1px #5e7f64 !important;
+}
+
+.navbar-nav {
+
+   
 }

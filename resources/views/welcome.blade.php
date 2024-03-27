@@ -25,7 +25,9 @@
        
     </head>
 
-    <body class="antialiased">
+    <body onload="iconHeaderEvent();" class="antialiased">
+
+     
 
         {{-- @foreach($api->content as $key => $data)
           
@@ -35,7 +37,7 @@
                 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/"> <img class="iconHeader" src="{{asset('img/icon/digimonEdit.jpg')}}" alt=""></a>
+              <a class="navbar-brand" href="/"> <img id="iconHeader" class="iconHeader" src="{{asset('img/icon/digimonEdit.jpg')}}" alt=""></a>
          
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +46,7 @@
              
                 <form method="POST" action="" class="d-flex" >
                     @csrf
-                    <ul class=" navbar-nav me-auto mb-2 mb-lg-0" >
+                    <ul id="list" class=" navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="/">Home</a>
                         </li>
@@ -62,6 +64,16 @@
               </div>
             </div>
           </nav>
+
+          <script>
+            function iconHeaderEvent() {
+                
+               document.getElementById("iconHeader").style.opacity = '1';
+               document.getElementById("iconHeader").style.right = '-0.5em';
+   
+           }
+   
+               </script>
           
             @if(isset($_POST['submit']))
 
@@ -69,11 +81,12 @@
 
             @endforeach
 
-            <h1>{{$api->name}} Type: {{$type->type}}</h1>
+            <h1 style="display: block">{{$api->name}} Type: {{$type->type}}</h1>
         
 
             @endif
 
+ 
         
     </body>
 </html>
