@@ -10,18 +10,70 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+
+        <link rel="stylesheet" href="{{asset('css/home.css')}}">
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
         <!-- Styles -->
        
     </head>
 
     <body class="antialiased">
 
-        @foreach($api->content as $key => $data)
+        {{-- @foreach($api->content as $key => $data)
           
         <h1>{{$data->name}}</h1>
 
-        @endforeach
-       
+        @endforeach --}}
+                
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/"> <img class="iconHeader" src="{{asset('img/icon/digimonEdit.jpg')}}" alt=""></a>
+         
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="listStyle collapse navbar-collapse" id="navbarSupportedContent">
+             
+                <form method="POST" action="" class="d-flex" >
+                    @csrf
+                    <ul class=" navbar-nav me-auto mb-2 mb-lg-0" >
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 2em">
+                          <a class="nav-link" href="#">About</a>
+                        </li>
+                        
+                    
+                      
+                  <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" name="submit">Search</button>
+                
+                </ul>
+                </form>
+              </div>
+            </div>
+          </nav>
+          
+            @if(isset($_POST['submit']))
+
+            @foreach($api->types as $key => $type)
+
+            @endforeach
+
+            <h1>{{$api->name}} Type: {{$type->type}}</h1>
+        
+
+            @endif
+
         
     </body>
 </html>

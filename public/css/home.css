@@ -1,0 +1,47 @@
+.listStyle {
+
+    
+    justify-content: end !important;
+
+}
+
+
+
+.iconHeader {
+
+    width: 60px;
+    transition: 0.5s;
+}
+
+.iconHeader:hover {
+
+    transform: scale(1.4);
+
+}
+
+.navbar {
+
+    border-bottom: 1px solid black !important;
+
+}
+
+button {
+
+    border: 1px solid #9bc8cd !important;
+    color: #5e7f64 !important;
+
+}
+
+button:hover {
+
+    background-color: #5e7f64 !important;
+    color: white !important;
+}
+
+input:hover, input:active, input:focus {
+
+    border: 1px solid #9bc8cd !important;
+
+    outline: 1px solid #9bc8cd !important;
+    box-shadow: 1px 1px 1px 1px #5e7f64 !important;
+}

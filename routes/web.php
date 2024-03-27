@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/",[Controller::class,'getApi']);
+Route::post("/",[Controller::class,'getApi']);
+
