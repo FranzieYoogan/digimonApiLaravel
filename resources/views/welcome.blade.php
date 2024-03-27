@@ -35,7 +35,7 @@
 
         @endforeach --}}
                 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
               <a class="navbar-brand" href="/"> <img id="iconHeader" class="iconHeader" src="{{asset('img/icon/digimonEdit.jpg')}}" alt=""></a>
          
@@ -148,9 +148,33 @@ document.getElementById("anchorHome").style.color = '#5e7f64';
 
             @endforeach
 
-            <h1 style="display: block">{{$api->name}} Type: {{$type->type}}</h1>
-        
+             @foreach($api->attributes as $key => $attribute)
 
+            @endforeach
+
+            @foreach($api->levels as $key => $level)
+
+            @endforeach
+
+            @foreach($api->images as $key => $img)
+
+            @endforeach
+
+                <div class="containerImg" style="position: relative">
+
+                    <img class="pokemonImg" src="{{$img->href}}" alt="">
+                    <h1 class="pokemonName" style="display: block">{{strtoupper($api->name)}}</h1>
+                </div>
+        
+            <div class="containerDataPokemon">
+
+
+            <h1 class="dataStyle" style="display: block">Type: {{$type->type}}</h1>
+            
+            <h1 class="dataStyle"  style="display: block">Attribute: {{$attribute->attribute}}</h1>
+
+            <h1 class="dataStyle" style="display: block">Level: {{$level->level}}</h1>
+        </div>
             @endif
 
         </section>
