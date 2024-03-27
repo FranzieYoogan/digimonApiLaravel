@@ -99,7 +99,7 @@
                     
                       
                   <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
-                  <button class="buttonStyle btn btn-outline-success" type="submit" name="submit">Search</button>
+                  <button class="buttonStyle btn btn-outline-success" id="submit" type="submit" name="submit">Search</button>
                 
                 </ul>
                 </form>
@@ -110,6 +110,8 @@
           <script>
             
             function iconHeaderEvent() {
+                document.getElementById("search").style.visibility = 'hidden';
+document.getElementById("submit").style.visibility = 'hidden';
                 document.getElementById("anchorAbout").style.color = '#5e7f64';
                 document.getElementById("anchorHome").style.color = '#5e7f64';
                document.getElementById("iconHeader").style.opacity = '1';
@@ -130,9 +132,12 @@
                 document.getElementById("anchorAbout").style.opacity = '1';
                 document.getElementById("anchorHome").style.opacity = '1';
                 document.getElementById("anchorHome").style.transition = '3s';
+   
                 document.getElementById("anchorAbout").style.transition = '3s';
                 document.getElementById("anchorAbout").style.color = '#9bc8cd';
 document.getElementById("anchorHome").style.color = '#5e7f64';
+
+
 
 }
                
