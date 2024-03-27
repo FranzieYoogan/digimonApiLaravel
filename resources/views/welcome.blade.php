@@ -65,9 +65,11 @@
                                         if(click == 1) {
 
                                             document.getElementById('list').style.visibility = 'visible';
-                                        
+                                            document.getElementById('content').style.visibility = 'hidden';
+                                            
                                         } else if(click == 2) {
                                             document.getElementById('list').style.visibility = 'hidden';
+                                            document.getElementById('content').style.visibility = 'visible';
                                             click = 0;
                                         }
                                 
@@ -79,7 +81,7 @@
                     
                       
                   <input class="form-control me-2" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" name="submit">Search</button>
+                  <button class="buttonStyle btn btn-outline-success" type="submit" name="submit">Search</button>
                 
                 </ul>
                 </form>
@@ -96,7 +98,8 @@
            }
    
                </script>
-          
+
+            <section id="content" class="content">
             @if(isset($_POST['submit']))
 
             @foreach($api->types as $key => $type)
@@ -108,7 +111,7 @@
 
             @endif
 
- 
+        </section>
         
     </body>
 </html>

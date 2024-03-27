@@ -5,6 +5,12 @@
 
 }
 
+.content {
+
+    visibility: visible;
+
+}
+
 .list {
 
     
@@ -51,6 +57,25 @@ opacity: 0;
 
     }
 
+    .nav-item {
+        
+        width: 140% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 140%   !important;
+    }
+
+    .buttonStyle {
+
+        width: 140%  !important;
+
+    }
+
 }
 
 
@@ -81,6 +106,25 @@ opacity: 0;
     ul {
         position: absolute !important;
         top: 8.5em !important;
+
+    }
+
+    .nav-item {
+        
+        width: 165% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 165% !important;
+    }
+
+    .buttonStyle {
+
+        width: 165%!important;
 
     }
 
@@ -115,6 +159,27 @@ opacity: 0;
     ul {
         position: absolute;
         top: 6.5em !important;
+            width: 90% !important;
+    }
+
+
+
+    .nav-item {
+        
+        width: 105% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 105%  !important;
+    }
+
+    .buttonStyle {
+
+        width: 105%  !important;
 
     }
 
@@ -135,6 +200,25 @@ opacity: 0;
 
     }
 
+    .nav-item {
+        
+        width: 190% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 190% !important;
+    }
+
+    .buttonStyle {
+
+        width: 190% !important;
+
+    }
+
   }
 
   @media only screen and (width: 768px) {
@@ -148,6 +232,25 @@ opacity: 0;
     ul {
         position: absolute !important;
         top: 8.5em !important;
+
+    }
+
+    .nav-item {
+        
+        width: 350% !important;
+        border-bottom: 1px solid #9bc8cd !important;
+    }
+
+    input {
+
+        margin-top: 1em !important;
+        margin-bottom: 1em !important;
+        width: 350%  !important;
+    }
+
+    .buttonStyle {
+
+        width: 350% !important;
 
     }
 
