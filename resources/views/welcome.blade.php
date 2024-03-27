@@ -48,35 +48,53 @@
                     @csrf
                     <ul id="list" class="list navbar-nav me-auto mb-2 mb-lg-0" >
                         <li class="nav-item">
-                          <a id="anchorHome" class="anchorHome nav-link" aria-current="page" href="/">Home</a>
+                          <a onmouseover="anchorEvent()"  id="anchorHome" class="anchorHome nav-link" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item" style="margin-right: 2em">
-                          <a id="anchorAbout" class="anchorAbout nav-link" href="/about">About</a>
+                          <a onmouseover="anchorEvent()" id="anchorAbout" class="anchorAbout nav-link" href="/about">About</a>
                         </li>
 
+
                         <script>
+                        function anchorEvent() {
 
+                            document.getElementById("anchorAbout").style.color = '#5e7f64';
 
-                            var click = 0
-
-                                function toggleEvent() {
-                                    click++;
-                            
-                                        if(click == 1) {
-
-                                            document.getElementById('list').style.visibility = 'visible';
-                                            document.getElementById('content').style.visibility = 'hidden';
-                                            
-                                        } else if(click == 2) {
-                                            document.getElementById('list').style.visibility = 'hidden';
-                                            document.getElementById('content').style.visibility = 'visible';
-                                            click = 0;
-                                        }
-                                
-
-                                }
+                        }
 
                         </script>
+
+<script>
+
+
+    var click = 0
+
+        function toggleEvent() {
+            click++;
+    
+                if(click == 1) {
+
+                    document.getElementById('list').style.visibility = 'visible';
+                    document.getElementById('anchorHome').style.opacity = '1';
+                    document.getElementById('anchorHome').style.transition = '0s';
+                    document.getElementById('anchorAbout').style.transition = '0s';
+                    document.getElementById('anchorAbout').style.opacity = '1';
+                    document.getElementById('content').style.visibility = 'hidden';
+                    
+                } else if(click == 2) {
+                    document.getElementById('anchorHome').style.transition = '0s';
+                    document.getElementById('anchorAbout').style.transition = '0s';
+                    document.getElementById('anchorHome').style.opacity = '0';
+                    document.getElementById('anchorAbout').style.opacity = '0';
+                    document.getElementById('list').style.visibility = 'hidden';
+                    document.getElementById('content').style.visibility = 'visible';
+                    click = 0;
+                }
+        
+
+        }
+
+</script>
                         
                     
                       
